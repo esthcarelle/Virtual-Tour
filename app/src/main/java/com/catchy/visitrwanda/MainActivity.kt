@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.catchy.visitrwanda.ui.components.CategoryList
+import com.catchy.visitrwanda.ui.components.CategoryScreen
 import com.catchy.visitrwanda.ui.theme.VisitRwandaTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,7 +21,7 @@ class MainActivity : ComponentActivity() {
                 Column(
                     modifier = Modifier.fillMaxSize()
                 ) {
-                    CategoryList(numberOfRows = 2)
+                    CategoryScreen()
                 }
             }
         }
