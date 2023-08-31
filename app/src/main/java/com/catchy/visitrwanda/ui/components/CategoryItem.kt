@@ -18,9 +18,11 @@ import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.catchy.visitrwanda.model.Category
+import com.catchy.visitrwanda.viewModel.CategoryViewModel
 
 @Composable
 fun CategoryItem(modifier : Modifier = Modifier, category: Category) {
+
     Box(modifier = modifier.wrapContentSize().padding(16.dp)){
         Card(modifier = Modifier.size(170.dp)) {
 
