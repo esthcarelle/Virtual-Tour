@@ -16,8 +16,8 @@ import com.catchy.visitrwanda.R
 @Composable
 fun CategoryName(
     name: String,
-    textColor: Color = colorResource(id = R.color.category_name_color),
     modifier: Modifier = Modifier,
+    textColor: Color = colorResource(id = R.color.category_name_color),
     fontWeight: FontWeight = FontWeight.ExtraBold,
     fontSize: TextUnit
 ) {

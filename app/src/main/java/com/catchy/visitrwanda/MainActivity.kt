@@ -9,7 +9,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.catchy.visitrwanda.ui.components.CategoryList
 import com.catchy.visitrwanda.ui.components.CategoryScreen
 import com.catchy.visitrwanda.ui.theme.VisitRwandaTheme
 
