@@ -12,11 +12,11 @@ import com.catchy.visitrwanda.viewModel.CategoryViewModel
 @Composable
 fun CategoryList(
     viewModel: CategoryViewModel = CategoryViewModel(),
-    numberOfRows: Int = 1,
-    numberOfColumns: Int = 2
+    numberOfRows: Int = 1
 ) {
     val categories by viewModel.mutableData.observeAsState(emptyList())
-    val split = categories.chunked(numberOfColumns)
+    if(categories.isNotEmpty()){
+    val split = categories.chunked(categories.size/numberOfRows)
 
     LazyColumn {
         itemsIndexed((0 until numberOfRows).map { it.toString() }) { index, _ ->
@@ -27,5 +27,6 @@ fun CategoryList(
                     }
                 }
         }
+    }
     }
 }

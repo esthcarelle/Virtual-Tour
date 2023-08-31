@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
                 Column(
                     modifier = Modifier.fillMaxSize()
                 ) {
-                    CategoryList()
+                    CategoryList(numberOfRows = 2)
                 }
             }
         }
