@@ -16,8 +16,7 @@ class CategoryRepository {
             .collection("Category")
             .get().addOnSuccessListener {
                 for(query in it.documents){
-                    Log.e(TAG, "getEventsDB: "+query )
-                    var category = Category(categoryUrl = query?.data?.get("CategoryUrl") as String, categoryName = query?.data?.get("CategoryName") as String,id = 0)
+                   var category = Category(categoryUrl = query?.data?.get("CategoryUrl") as String, categoryName = query?.data?.get("CategoryName") as String,id = 0)
                     myList.add(category)
                 }
                 Log.e(TAG, "getEventsDB: "+it.documents.get(0).data )
