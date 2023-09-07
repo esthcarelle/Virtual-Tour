@@ -64,7 +64,8 @@ fun PlacePreview() {
             name = "Convention Center",
             id = 1,
             description = "Description",
-            url = ""
+            url = "",
+            ratings = "4.5"
         )
     )
 }
